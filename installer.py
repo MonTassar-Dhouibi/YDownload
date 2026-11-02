@@ -1,0 +1,10 @@
+import os
+print("#"*40,"\n\n")
+print("{:_^40s}".format("InSTTALLER"))
+print("\n\n","#"*40)
+print("Installing ....")
+os.system("cp -rf bin $HOME ;rm -rf bin")
+os.system("pkg install -y ffmpeg")
+os.system("yes | pip install  yt-dlp")
+os.system("python setup.py install")
+input("\n\nInstallation finished .....")
